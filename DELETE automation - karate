@@ -1,0 +1,15 @@
+Scenario: delete data user
+    Given url "https://petstore.swagger.io/#/user/deleteUser"
+
+schedulerPage.clickResourceSchedule().click();
+    logger.info("Resource schedule link is clicked");
+    Thread.sleep(500);
+    if(resourceSchedulePage.clickDeleteResourceScheduleDataBtn().isDisplayed())
+    {
+        resourceSchedulePage.clickDeleteResourceScheduleDataBtn().click();
+        Thread.sleep(500);
+    }
+    else
+    {
+        driver.close();
+    }
