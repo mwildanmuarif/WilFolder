@@ -6,8 +6,7 @@ public class TestRunner {
  
 }
 
-Scenario: testing the get call for User Details
- 
+Scenario: get data user 
 Given url 'https://petstore.swagger.io/#/user/loginUser'
 When method GET
 Then status 200
