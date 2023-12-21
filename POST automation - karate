@@ -1,3 +1,6 @@
+Scenario: post data user
+    Given url "https://petstore.swagger.io/#/user/createUser'
+
 URL url;
 String api_url = "https://petstore.swagger.io/#/user/createUser";
 String username = "wildan";
